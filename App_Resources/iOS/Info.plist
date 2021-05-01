@@ -45,5 +45,9 @@
 	</array>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>enter your photo library permission request text here</string>
+	<key>NSCameraUsageDescription</key>
+	<string>enter your camera permission request text here</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>enter your photo library permission request text here</string>
 </dict>
 </plist>
