@@ -1,0 +1,19 @@
+<ActionBar class="action-bar">
+    <NavigationButton visibility="hidden"></NavigationButton>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Gps" colSpan="2"></Label>
+
+        <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+    </GridLayout>
+</ActionBar>
+
+<GridLayout class="page__content" rows="*,*,*">
+
+  <Label class="page__content-icon far" text="&#xf1ea;"></Label>
+  <Label class="page__content-placeholder" text="Gps Page"></Label>
+  <Button row="1" text="GPS" (tap)="getLocation()" style="background-color: blue; color: white;"></Button>
+  <StackLayout row="2" style="text-align: center;">
+      <Label [text]="location.altitude" textWrap="true" class="h2"></Label>
+      <Label [text]="location.longitude" textWrap="true" class="h2"></Label>
+  </StackLayout>
+</GridLayout>

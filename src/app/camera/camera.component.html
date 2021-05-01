@@ -1,0 +1,17 @@
+<ActionBar class="action-bar">
+    <NavigationButton visibility="hidden"></NavigationButton>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Camera" colSpan="2"></Label>
+
+        <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+    </GridLayout>
+</ActionBar>
+
+<GridLayout class="page__content" rows="*,*,*">
+  <Label class="page__content-icon fas" text="&#xf005;"></Label>
+  <Label class="page__content-placeholder" text="Camera Page"></Label>
+  <Button row="1" class="page__content-button" text="C&aacute;mara" (tap)="takePhoto()" style="background-color: blue; color: white;"></Button>
+  <StackLayout row="2">
+      <Image [src]="imagePhoto.src" style="width: 100%; height: auto;"></Image>
+  </StackLayout>
+</GridLayout>

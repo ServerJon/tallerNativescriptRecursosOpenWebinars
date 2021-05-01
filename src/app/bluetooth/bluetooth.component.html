@@ -1,0 +1,30 @@
+<ActionBar class="action-bar">
+    <NavigationButton visibility="hidden"></NavigationButton>
+    <GridLayout columns="50, *">
+        <Label class="action-bar-title" text="Bluetooth" colSpan="2"></Label>
+
+        <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+    </GridLayout>
+</ActionBar>
+
+<GridLayout class="page__content" rows="*,*,*">
+  <Label class="page__content-icon fas" text="&#xf002;"></Label>
+  <Label class="page__content-placeholder" text="Bluetooth Page"></Label>
+
+  <StackLayout row="1">
+    <Button text="Comenzar" (tap)="startScanning()"></Button>
+    <Button text="Parar" (tap)="stopScanning()"></Button>
+  </StackLayout>
+
+  <StackLayout row="2" >
+
+    <ListView [items]="arrayBluetooth" class="list-group" style="height: 100%;">
+        <ng-template let-item="item">
+          <StackLayout>
+            <Label [text]="item" class="list-group-item"></Label>
+          </StackLayout>
+        </ng-template>
+    </ListView>
+  </StackLayout>
+
+</GridLayout>

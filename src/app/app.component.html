@@ -26,31 +26,31 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
         <GridLayout
           columns="auto, *"
           class="nt-drawer__list-item"
-          [class.-selected]="isComponentSelected('/browse')"
-          (tap)="onNavItemTap('/browse')"
+          [class.-selected]="isComponentSelected('/bluetooth')"
+          (tap)="onNavItemTap('/bluetooth')"
         >
           <Label col="0" text="&#xf1ea;" class="nt-icon far"></Label>
-          <Label col="1" text="Browse" class="p-r-10"></Label>
+          <Label col="1" text="Bluetooth" class="p-r-10"></Label>
         </GridLayout>
 
         <GridLayout
           columns="auto, *"
           class="nt-drawer__list-item"
-          [class.-selected]="isComponentSelected('/search')"
-          (tap)="onNavItemTap('/search')"
+          [class.-selected]="isComponentSelected('/gps')"
+          (tap)="onNavItemTap('/gps')"
         >
           <Label col="0" text="&#xf002;" class="nt-icon fas"></Label>
-          <Label col="1" text="Search" class="p-r-10"></Label>
+          <Label col="1" text="Gps" class="p-r-10"></Label>
         </GridLayout>
 
         <GridLayout
           columns="auto, *"
           class="nt-drawer__list-item"
-          [class.-selected]="isComponentSelected('/featured')"
-          (tap)="onNavItemTap('/featured')"
+          [class.-selected]="isComponentSelected('/camera')"
+          (tap)="onNavItemTap('/camera')"
         >
           <Label col="0" text="&#xf005;" class="nt-icon fas"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
+          <Label col="1" text="Cámara" class="p-r-10"></Label>
         </GridLayout>
 
         <StackLayout class="hr"></StackLayout>

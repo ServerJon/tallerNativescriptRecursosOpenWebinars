@@ -9,16 +9,16 @@ const routes: Routes = [
     loadChildren: () => import('~/app/home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'browse',
-    loadChildren: () => import('~/app/browse/browse.module').then((m) => m.BrowseModule),
+    path: 'bluetooth',
+    loadChildren: () => import('~/app/bluetooth/bluetooth.module').then((m) => m.BluetoothModule),
   },
   {
-    path: 'search',
-    loadChildren: () => import('~/app/search/search.module').then((m) => m.SearchModule),
+    path: 'gps',
+    loadChildren: () => import('~/app/gps/gps.module').then((m) => m.GpsModule),
   },
   {
-    path: 'featured',
-    loadChildren: () => import('~/app/featured/featured.module').then((m) => m.FeaturedModule),
+    path: 'camera',
+    loadChildren: () => import('~/app/camera/camera.module').then((m) => m.CameraModule),
   },
   {
     path: 'settings',
